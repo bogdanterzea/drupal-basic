@@ -2,7 +2,7 @@
 - [ddev](https://ddev.com/get-started/)
 
 ### Setup
-- `ddev config`
+- `ddev config` # use defaults
 - `ddev start`
 - `ddev exec composer install`
 - `ddev exec drush sqlc < dumps/default.sql`
