@@ -2,8 +2,8 @@ _core:
   default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
 langcode: en
 uuid: aa226b3b-2e45-4eba-a9f7-f7f0b4b702c3
-name: Drupal
-mail: ''
+name: DrupalBasic
+mail: noreply@drupalbasic.com
 slogan: ''
 page:
   403: ''
