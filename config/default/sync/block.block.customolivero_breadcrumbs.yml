@@ -11,7 +11,7 @@ _core:
 id: customolivero_breadcrumbs
 theme: customolivero
 region: breadcrumb
-weight: 0
+weight: -6
 provider: null
 plugin: system_breadcrumb_block
 settings:
