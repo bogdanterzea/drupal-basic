@@ -47,4 +47,5 @@ module:
 theme:
   olivero: 0
   claro: 0
+  customolivero: 0
 profile: standard
