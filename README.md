@@ -1,6 +1,5 @@
 ### Prerequisites
-- php 8.1
-- ddev
+- [ddev](https://ddev.com/get-started/)
 
 ### Setup
 - `ddev config`
