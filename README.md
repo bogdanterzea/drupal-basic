@@ -12,4 +12,4 @@
 - `ddev start`
 
 ### Admin access
-- `ddev exec user:login`
+- `ddev exec drush user:login`
