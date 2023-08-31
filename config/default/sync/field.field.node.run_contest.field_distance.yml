@@ -1,0 +1,23 @@
+uuid: 7af0fe73-500b-4bd6-b037-6c3b71ad8350
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_distance
+    - node.type.run_contest
+id: node.run_contest.field_distance
+field_name: field_distance
+entity_type: node
+bundle: run_contest
+label: Distance
+description: 'Distance in KM'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' KM'
+field_type: integer

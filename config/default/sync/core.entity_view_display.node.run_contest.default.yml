@@ -1,0 +1,59 @@
+uuid: 288387e3-742b-4a8f-8ceb-2d09d4584f83
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.run_contest.body
+    - field.field.node.run_contest.field_distance
+    - field.field.node.run_contest.field_location
+    - field.field.node.run_contest.field_race_image
+    - node.type.run_contest
+  module:
+    - image
+    - text
+    - user
+id: node.run_contest.default
+targetEntityType: node
+bundle: run_contest
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_distance:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_location:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_race_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

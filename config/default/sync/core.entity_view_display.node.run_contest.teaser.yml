@@ -1,0 +1,36 @@
+uuid: 0998e159-4717-4a74-9ab9-2e931fc5b4d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.run_contest.body
+    - field.field.node.run_contest.field_distance
+    - field.field.node.run_contest.field_location
+    - field.field.node.run_contest.field_race_image
+    - node.type.run_contest
+  module:
+    - text
+    - user
+id: node.run_contest.teaser
+targetEntityType: node
+bundle: run_contest
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_distance: true
+  field_location: true
+  field_race_image: true
