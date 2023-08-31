@@ -1,6 +1,6 @@
-uuid: a9c553f1-bd25-4dd8-b7b4-597a6feb72d3
+uuid: 35d4e4ee-ec1e-4359-a8e8-fad0dc0249a7
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - customolivero
@@ -9,7 +9,7 @@ _core:
 id: customolivero_primary_admin_actions
 theme: customolivero
 region: header
-weight: -7
+weight: -2
 provider: null
 plugin: local_actions_block
 settings:
