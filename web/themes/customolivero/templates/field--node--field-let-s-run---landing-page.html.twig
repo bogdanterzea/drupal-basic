@@ -1,5 +1,0 @@
-{% if(user.account.roles[0] != "anonymous") %}
-    {% for item in items %}
-      <div{{ item.attributes }}>{{ item.content }}</div>
-    {% endfor %}
-{% endif %}
