@@ -46,6 +46,21 @@ elements: |-
       sort:
         field: title
         direction: ASC
+  fundraiser:
+    '#type': checkbox
+    '#title': Fundraiser
+    '#description': '<p>Mark this checkbox if you are fundraiser for a cause</p>'
+  fundraising_image:
+    '#type': webform_image_file
+    '#title': 'Fundraising image'
+  fundraising_title:
+    '#type': textfield
+    '#title': 'Fundraising title'
+  treasea:
+    '#type': text_format
+    '#title': 'Fundraising Body'
+    '#allowed_formats':
+      basic_html: basic_html
 css: ''
 javascript: ''
 settings:
