@@ -124,9 +124,9 @@ settings:
   form_autofocus: true
   form_details_toggle: false
   form_reset: false
-  form_access_denied: default
+  form_access_denied: login
   form_access_denied_title: ''
-  form_access_denied_message: ''
+  form_access_denied_message: '<p>You need to login to be able to join any race</p>'
   form_access_denied_attributes: {  }
   form_file_limit: ''
   form_attributes: {  }
