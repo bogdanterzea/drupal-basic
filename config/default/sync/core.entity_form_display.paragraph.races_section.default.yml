@@ -1,0 +1,25 @@
+uuid: ddc163ce-fa26-4854-9ec2-ae8f960096ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.races_section.field_races
+    - paragraphs.paragraphs_type.races_section
+id: paragraph.races_section.default
+targetEntityType: paragraph
+bundle: races_section
+mode: default
+content:
+  field_races:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

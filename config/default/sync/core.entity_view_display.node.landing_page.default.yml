@@ -1,0 +1,44 @@
+uuid: 7bf256e6-b8ee-4b5d-8bae-d65968ed092e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.landing_page.field_let_s_run_
+    - field.field.node.landing_page.field_races
+    - node.type.landing_page
+  module:
+    - entity_reference_revisions
+    - link
+    - user
+id: node.landing_page.default
+targetEntityType: node
+bundle: landing_page
+mode: default
+content:
+  field_let_s_run_:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_races:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

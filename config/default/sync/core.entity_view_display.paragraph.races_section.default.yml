@@ -1,0 +1,21 @@
+uuid: 0813982a-1930-4126-ab34-4739d6713f24
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.races_section.field_races
+    - paragraphs.paragraphs_type.races_section
+id: paragraph.races_section.default
+targetEntityType: paragraph
+bundle: races_section
+mode: default
+content:
+  field_races:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

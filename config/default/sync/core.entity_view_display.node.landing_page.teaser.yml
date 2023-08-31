@@ -1,0 +1,24 @@
+uuid: 458d88ea-efa5-479f-ad7d-def367f2458a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.landing_page.field_let_s_run_
+    - field.field.node.landing_page.field_races
+    - node.type.landing_page
+  module:
+    - user
+id: node.landing_page.teaser
+targetEntityType: node
+bundle: landing_page
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_let_s_run_: true
+  field_races: true
