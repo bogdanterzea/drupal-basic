@@ -1,4 +1,4 @@
-uuid: e8f7bf0a-5890-4205-9ab9-db20a84a64cc
+uuid: 4ad6abcc-2aae-4041-ae4a-0ca0c92a60fb
 langcode: en
 status: true
 dependencies:
@@ -10,8 +10,8 @@ _core:
   default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
 id: customolivero_messages
 theme: customolivero
-region: breadcrumb
-weight: -7
+region: header
+weight: -5
 provider: null
 plugin: system_messages_block
 settings:

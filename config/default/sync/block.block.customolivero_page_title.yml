@@ -1,4 +1,4 @@
-uuid: 0cc22602-1a3b-4dee-9c50-e05b941b91f9
+uuid: 16ee4d89-fe58-4c18-a649-6c226f5ce35a
 langcode: en
 status: true
 dependencies:
@@ -8,8 +8,8 @@ _core:
   default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
 id: customolivero_page_title
 theme: customolivero
-region: content
-weight: -7
+region: header
+weight: -6
 provider: null
 plugin: page_title_block
 settings:

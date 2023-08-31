@@ -1,4 +1,4 @@
-uuid: 3fc04947-2010-4496-bf03-0e9b7848a95a
+uuid: 531152f5-b6c3-4b69-b646-42a4ca694c1a
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: customolivero_help
 theme: customolivero
 region: header
-weight: -4
+weight: -3
 provider: null
 plugin: help_block
 settings:

@@ -1,3 +1,16 @@
 _core:
   default_config_hash: cteYTFHsidc-jJ8t9bxaGGe-7bRbvOMIH9vWxWm977k
+favicon:
+  use_default: true
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: 'public://Screenshot 2023-08-31 at 12.48.00_0.png'
+  use_default: false
 example: foo
+mobile_menu_all_widths: 0
+site_branding_bg_color: default
+base_primary_color: '#b63e20'

@@ -1,6 +1,6 @@
-uuid: 872cd6e0-1fdf-4440-93ef-c41f1646ebdb
+uuid: 80b6fd59-010f-4fb0-9e05-96fce48670c2
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
 id: customolivero_powered
 theme: customolivero
-region: footer
-weight: -6
+region: header
+weight: 0
 provider: null
 plugin: system_powered_by_block
 settings:
