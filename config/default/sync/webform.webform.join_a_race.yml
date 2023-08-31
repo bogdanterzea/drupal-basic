@@ -53,12 +53,39 @@ elements: |-
   fundraising_image:
     '#type': webform_image_file
     '#title': 'Fundraising image'
+    '#states':
+      visible:
+        ':input[name="fundraiser"]':
+          checked: true
+      invisible:
+        - ':input[name="fundraiser"]':
+            unchecked: true
   fundraising_title:
     '#type': textfield
     '#title': 'Fundraising title'
+    '#states':
+      visible:
+        ':input[name="fundraiser"]':
+          checked: true
+      invisible:
+        - ':input[name="fundraiser"]':
+            unchecked: true
+        - xor
+        - ':input[name="fundraiser"]':
+            empty: true
   treasea:
     '#type': text_format
     '#title': 'Fundraising Body'
+    '#states':
+      visible:
+        ':input[name="fundraiser"]':
+          checked: true
+      invisible:
+        - ':input[name="fundraiser"]':
+            empty: true
+        - or
+        - ':input[name="fundraiser"]':
+            unchecked: true
     '#allowed_formats':
       basic_html: basic_html
 css: ''
