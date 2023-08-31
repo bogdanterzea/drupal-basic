@@ -1,0 +1,24 @@
+uuid: f5d8578f-1c89-4a2d-828b-b2f90af094d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - filter.format.plain_text
+    - node.type.run_contest
+  module:
+    - text
+id: node.run_contest.field_location
+field_name: field_location
+entity_type: node
+bundle: run_contest
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - plain_text
+field_type: text

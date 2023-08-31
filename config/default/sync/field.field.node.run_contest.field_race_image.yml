@@ -1,0 +1,38 @@
+uuid: 7aac11e4-952d-4c90-bc72-864ba579898c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_race_image
+    - node.type.run_contest
+  module:
+    - image
+id: node.run_contest.field_race_image
+field_name: field_race_image
+entity_type: node
+bundle: run_contest
+label: 'Race image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '64 MB'
+  max_resolution: ''
+  min_resolution: 500x500
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 3fdff400-9785-4358-8eb1-8dd85292be41
+    alt: ''
+    title: ''
+    width: 500
+    height: 502
+field_type: image
