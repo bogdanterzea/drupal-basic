@@ -46,6 +46,48 @@ elements: |-
       sort:
         field: title
         direction: ASC
+  fundraiser:
+    '#type': checkbox
+    '#title': Fundraiser
+    '#description': '<p>Mark this checkbox if you are fundraiser for a cause</p>'
+  fundraising_image:
+    '#type': webform_image_file
+    '#title': 'Fundraising image'
+    '#states':
+      visible:
+        ':input[name="fundraiser"]':
+          checked: true
+      invisible:
+        - ':input[name="fundraiser"]':
+            unchecked: true
+  fundraising_title:
+    '#type': textfield
+    '#title': 'Fundraising title'
+    '#states':
+      visible:
+        ':input[name="fundraiser"]':
+          checked: true
+      invisible:
+        - ':input[name="fundraiser"]':
+            unchecked: true
+        - xor
+        - ':input[name="fundraiser"]':
+            empty: true
+  treasea:
+    '#type': text_format
+    '#title': 'Fundraising Body'
+    '#states':
+      visible:
+        ':input[name="fundraiser"]':
+          checked: true
+      invisible:
+        - ':input[name="fundraiser"]':
+            empty: true
+        - or
+        - ':input[name="fundraiser"]':
+            unchecked: true
+    '#allowed_formats':
+      basic_html: basic_html
 css: ''
 javascript: ''
 settings:
@@ -82,9 +124,9 @@ settings:
   form_autofocus: true
   form_details_toggle: false
   form_reset: false
-  form_access_denied: default
+  form_access_denied: login
   form_access_denied_title: ''
-  form_access_denied_message: ''
+  form_access_denied_message: '<p>You need to login to be able to join any race</p>'
   form_access_denied_attributes: {  }
   form_file_limit: ''
   form_attributes: {  }
