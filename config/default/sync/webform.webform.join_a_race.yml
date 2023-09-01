@@ -52,16 +52,6 @@ elements: |-
     '#type': checkbox
     '#title': Fundraiser
     '#description': '<p>Mark this checkbox if you are fundraiser for a cause</p>'
-  fundraising_image:
-    '#type': webform_image_file
-    '#title': 'Fundraising image'
-    '#states':
-      visible:
-        ':input[name="fundraiser"]':
-          checked: true
-      invisible:
-        - ':input[name="fundraiser"]':
-            unchecked: true
   fundraising_title:
     '#type': textfield
     '#title': 'Fundraising title'
@@ -90,6 +80,22 @@ elements: |-
             unchecked: true
     '#allowed_formats':
       basic_html: basic_html
+  fundraising_image:
+    '#type': webform_image_file
+    '#title': 'Fundraising image'
+    '#states':
+      visible:
+        ':input[name="fundraiser"]':
+          checked: true
+      invisible:
+        - ':input[name="fundraiser"]':
+            empty: true
+        - xor
+        - ':input[name="fundraiser"]':
+            unchecked: true
+    '#uri_scheme': public
+    '#file_preview': ':image'
+    '#max_filesize': '98'
 css: ''
 javascript: ''
 settings:

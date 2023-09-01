@@ -8,7 +8,7 @@ dependencies:
     - field.field.node.run_contest.field_location
     - field.field.node.run_contest.field_race_image
     - field.field.node.run_contest.field_view_participants
-    - image.style.thumbnail
+    - image.style.medium
     - node.type.run_contest
   module:
     - image
@@ -57,7 +57,7 @@ content:
     region: content
     settings:
       progress_indicator: throbber
-      preview_image_style: thumbnail
+      preview_image_style: medium
     third_party_settings: {  }
   field_view_participants:
     type: link_default

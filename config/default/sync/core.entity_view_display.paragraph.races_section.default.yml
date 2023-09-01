@@ -3,13 +3,27 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.races_section.field_race_image
     - field.field.paragraph.races_section.field_races
     - paragraphs.paragraphs_type.races_section
+  module:
+    - image
 id: paragraph.races_section.default
 targetEntityType: paragraph
 bundle: races_section
 mode: default
 content:
+  field_race_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
   field_races:
     type: entity_reference_label
     label: above
