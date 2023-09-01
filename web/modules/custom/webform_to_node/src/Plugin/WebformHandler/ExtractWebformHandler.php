@@ -2,6 +2,7 @@
 
 namespace Drupal\webform_to_node\Plugin\WebformHandler;
 
+use Drupal\node\Entity\Node;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\webform\Plugin\WebformHandlerBase;
 use Drupal\webform\WebformSubmissionInterface;
@@ -23,7 +24,16 @@ class ExtractWebformHandler extends WebformHandlerBase {
   /**
    * {@inheritdoc}
    */
-  public function submitForm(array &$form, FormStateInterface $form_state, WebformSubmissionInterface $webform_submission) {
-    die("sdfsdfs sfdsd");
+  public function confirmForm(array &$form, FormStateInterface $form_state, WebformSubmissionInterface $webform_submission) {
+    if ($webform_submission->getElementData('fundraiser')) {
+      $node = Node::create([
+        'type' => 'fundraiser_content',
+        'title' => $webform_submission->getElementData('fundraising_title'),
+        'body' => $webform_submission->getElementData('treasea'),
+        'field_fundraising_image'=> $webform_submission->getElementData('fundraising_image'),
+      ]);
+
+      $node->save();
+      }
+    }
   }
-}
