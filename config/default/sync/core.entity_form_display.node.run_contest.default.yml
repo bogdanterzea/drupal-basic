@@ -7,10 +7,12 @@ dependencies:
     - field.field.node.run_contest.field_distance
     - field.field.node.run_contest.field_location
     - field.field.node.run_contest.field_race_image
+    - field.field.node.run_contest.field_view_participants
     - image.style.thumbnail
     - node.type.run_contest
   module:
     - image
+    - link
     - path
     - text
 id: node.run_contest.default
@@ -56,6 +58,14 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_view_participants:
+    type: link_default
+    weight: 126
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
     third_party_settings: {  }
   path:
     type: path

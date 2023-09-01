@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.run_contest.field_distance
     - field.field.node.run_contest.field_location
     - field.field.node.run_contest.field_race_image
+    - field.field.node.run_contest.field_view_participants
     - node.type.run_contest
   module:
     - text
@@ -34,3 +35,4 @@ hidden:
   field_distance: true
   field_location: true
   field_race_image: true
+  field_view_participants: true
