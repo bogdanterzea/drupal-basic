@@ -1,7 +1,9 @@
 uuid: 2f227b5a-191f-4226-9602-1eea2908b99b
 langcode: en
 status: open
-dependencies: {  }
+dependencies:
+  module:
+    - webform_to_node
 weight: 0
 open: null
 close: null
@@ -291,5 +293,14 @@ access:
       - administrator
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  extract_a_node:
+    id: 'Extract a node'
+    handler_id: extract_a_node
+    label: 'Extract a node'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 0
+    settings: {  }
 variants: {  }
