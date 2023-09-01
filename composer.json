@@ -22,6 +22,7 @@
         "drupal/core-recommended": "^10.1",
         "drupal/paragraphs": "^1.15",
         "drupal/webform": "^6.2@beta",
+        "drupal/webform_views": "^5.2",
         "drush/drush": "^12.1"
     },
     "conflict": {

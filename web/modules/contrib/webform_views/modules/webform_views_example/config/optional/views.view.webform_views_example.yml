@@ -1,17 +1,16 @@
-uuid: b943974e-51a0-4e2c-944e-d468b90221d0
+uuid: 11d470d0-729c-46c0-be59-ad7ea64d5d83
 langcode: en
 status: true
 dependencies:
   config:
-    - webform.webform.join_a_race
+    - webform.webform.webform_views_example
   module:
-    - user
     - webform
     - webform_views
-id: race_responses
-label: 'Race responses'
+id: webform_views_example
+label: webform_views_example
 module: views
-description: ''
+description: webform_views_example
 tag: ''
 base_table: webform_submission
 base_field: sid
@@ -22,123 +21,70 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Race responses'
       fields:
+        webform_submission_bulk_form:
+          id: webform_submission_bulk_form
+          table: webform_submission
+          field: webform_submission_bulk_form
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: null
+          entity_field: null
+          plugin_id: webform_submission_bulk_form
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          action_title: Action
+          include_exclude: exclude
+          selected_actions: {  }
         webform_submission_value:
           id: webform_submission_value
-          table: webform_submission_field_join_a_race_age
+          table: webform_submission_field_webform_views_example_entity_select_user
           field: webform_submission_value
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: webform_submission_field
-          label: Age
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          webform_element_format: value
-          webform_multiple_value: true
-          webform_multiple_delta: 0
-          webform_check_access: 1
-        webform_submission_value_3:
-          id: webform_submission_value_3
-          table: webform_submission_field_join_a_race_name_surname
-          field: webform_submission_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: webform_submission_field
-          label: Name-Surname
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          webform_element_format: value
-          webform_multiple_value: true
-          webform_multiple_delta: 0
-          webform_check_access: 1
-        webform_submission_value_4:
-          id: webform_submission_value_4
-          table: webform_submission_field_join_a_race_race
-          field: webform_submission_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: webform_submission_field
-          label: Race
+          label: 'entity user'
           exclude: false
           alter:
             alter_text: false
@@ -180,18 +126,300 @@ display:
           empty_zero: false
           hide_alter_empty: true
           webform_element_format: link
-          webform_multiple_value: true
+          webform_multiple_value: 1
           webform_multiple_delta: 0
           webform_check_access: 1
+          webform_multiple_field:
+            default: ''
+        webform_submission_value_1:
+          id: webform_submission_value_1
+          table: webform_submission_field_webform_views_example_checkbox
+          field: webform_submission_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: webform_submission_field
+          label: checkbox
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          webform_element_format: value
+          webform_multiple_value: 1
+          webform_multiple_delta: 0
+          webform_check_access: 1
+          webform_multiple_field:
+            default: ''
+        webform_submission_value_2:
+          id: webform_submission_value_2
+          table: webform_submission_field_webform_views_example_checkboxes
+          field: webform_submission_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: webform_submission_field
+          label: checkboxes
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          webform_element_format: value
+          webform_multiple_value: 1
+          webform_multiple_delta: 0
+          webform_check_access: 1
+          webform_multiple_field:
+            default: ''
+        webform_submission_value_3:
+          id: webform_submission_value_3
+          table: webform_submission_field_webform_views_example_radios
+          field: webform_submission_value
+          plugin_id: webform_submission_field
+        webform_submission_value_4:
+          id: webform_submission_value_4
+          table: webform_submission_field_webform_views_example_multi_textfield
+          field: webform_submission_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: webform_submission_field
+          label: 'multi textfield'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          webform_element_format: value
+          webform_multiple_value: 1
+          webform_multiple_delta: 0
+          webform_check_access: 1
+          webform_multiple_field:
+            default: ''
         webform_submission_value_5:
           id: webform_submission_value_5
-          table: webform_submission_field_join_a_race_time_you_predict_to_finish
+          table: webform_submission_field_webform_views_example_textarea
+          field: webform_submission_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: webform_submission_field
+          label: textarea
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          webform_element_format: value
+          webform_multiple_value: 1
+          webform_multiple_delta: 0
+          webform_check_access: 1
+          webform_multiple_field:
+            default: ''
+        webform_submission_value_6:
+          id: webform_submission_value_6
+          table: webform_submission_field_webform_views_example_email
+          field: webform_submission_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: webform_submission_field
+          label: email
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          webform_element_format: link
+          webform_multiple_value: 1
+          webform_multiple_delta: 0
+          webform_check_access: 1
+          webform_multiple_field:
+            default: ''
+        webform_submission_value_7:
+          id: webform_submission_value_7
+          table: webform_submission_field_webform_views_example_number
           field: webform_submission_value
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: webform_submission_field_numeric
-          label: 'Time you predict to finish'
+          label: number
           exclude: false
           alter:
             alter_text: false
@@ -233,119 +461,29 @@ display:
           empty_zero: false
           hide_alter_empty: true
           webform_element_format: value
-          webform_multiple_value: true
+          webform_multiple_value: 1
           webform_multiple_delta: 0
           webform_check_access: 1
-        webform_submission_value_1:
-          id: webform_submission_value_1
-          table: webform_submission_field_join_a_race_fundraiser
-          field: webform_submission_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: webform_submission_field
-          label: Fundraiser
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          webform_element_format: value
-          webform_multiple_value: true
-          webform_multiple_delta: 0
-          webform_check_access: 1
-        webform_submission_value_2:
-          id: webform_submission_value_2
-          table: webform_submission_field_join_a_race_fundraising_title
-          field: webform_submission_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: webform_submission_field
-          label: 'Fundraising title'
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          webform_element_format: value
-          webform_multiple_value: true
-          webform_multiple_delta: 0
-          webform_check_access: 1
+          webform_multiple_field:
+            default: ''
       pager:
-        type: none
+        type: mini
         options:
           offset: 0
+          items_per_page: 10
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
       exposed_form:
         type: basic
         options:
@@ -363,33 +501,7 @@ display:
         type: tag
         options: {  }
       empty: {  }
-      sorts:
-        webform_submission_value:
-          id: webform_submission_value
-          table: webform_submission_field_join_a_race_name_surname
-          field: webform_submission_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: webform_submission_field_sort
-          order: ASC
-          expose:
-            label: ''
-            field_identifier: ''
-          exposed: false
-        webform_submission_value_1:
-          id: webform_submission_value_1
-          table: webform_submission_field_join_a_race_race
-          field: webform_submission_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: webform_submission_field_sort
-          order: ASC
-          expose:
-            label: Race
-            field_identifier: webform_submission_value_1
-          exposed: true
+      sorts: {  }
       arguments: {  }
       filters:
         webform_id:
@@ -400,26 +512,46 @@ display:
           entity_field: webform_id
           plugin_id: bundle
           value:
-            join_a_race: join_a_race
+            webform_views_example: webform_views_example
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
       style:
         type: table
         options:
           grouping: {  }
           row_class: ''
           default_row_class: true
-          uses_fields: false
-          columns: {  }
-          default: ''
-          info: {  }
+          columns:
+            webform_submission_bulk_form: webform_submission_bulk_form
+            webform_submission_value: webform_submission_value
+          default: '-1'
+          info:
+            webform_submission_bulk_form:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            webform_submission_value:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
           override: true
           sticky: false
           summary: ''
-          order: asc
           empty_table: false
           caption: ''
           description: ''
       row:
         type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
       query:
         type: views_query
         options:
@@ -433,55 +565,9 @@ display:
       footer: {  }
       display_extenders: {  }
     cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
         - 'languages:language_interface'
-        - 'url.query_args:sort_by'
-        - 'url.query_args:sort_order'
-        - user
-      tags: {  }
-  block_1:
-    id: block_1
-    display_title: Block
-    display_plugin: block
-    position: 1
-    display_options:
-      display_extenders: {  }
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_interface'
-        - 'url.query_args:sort_by'
-        - 'url.query_args:sort_order'
-        - user
-      tags: {  }
-  page_1:
-    id: page_1
-    display_title: Page
-    display_plugin: page
-    position: 2
-    display_options:
-      defaults:
-        relationships: false
-      relationships:
-        uid:
-          id: uid
-          table: webform_submission
-          field: uid
-          relationship: none
-          group_type: group
-          admin_label: User
-          entity_type: webform_submission
-          entity_field: uid
-          plugin_id: standard
-          required: false
-      display_extenders: {  }
-      path: races-responses
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_interface'
-        - 'url.query_args:sort_by'
-        - 'url.query_args:sort_order'
+        - url.query_args
         - user
       tags: {  }
