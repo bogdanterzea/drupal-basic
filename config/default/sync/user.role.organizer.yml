@@ -2,7 +2,19 @@ uuid: b6202f13-a2b0-47ac-a63b-61c068bdf7fe
 langcode: en
 status: true
 dependencies:
+  config:
+    - block_content.type.basic
+    - node.type.article
+    - node.type.landing_page
+    - node.type.page
+    - node.type.run_contest
   module:
+    - block
+    - block_content
+    - comment
+    - contact
+    - node
+    - search
     - webform
 id: organizer
 label: Organizer
@@ -12,6 +24,30 @@ permissions:
   - 'access webform help'
   - 'access webform overview'
   - 'access webform submission user'
+  - 'administer block types'
+  - 'administer blocks'
+  - 'administer comments'
+  - 'administer contact forms'
+  - 'administer search'
   - 'administer webform'
   - 'administer webform element access'
+  - 'create article content'
+  - 'create basic block content'
+  - 'create landing_page content'
+  - 'create page content'
+  - 'create run_contest content'
+  - 'delete any article content'
+  - 'delete any landing_page content'
+  - 'delete any page content'
+  - 'delete any run_contest content'
+  - 'delete own article content'
+  - 'delete own landing_page content'
+  - 'delete own page content'
+  - 'delete own run_contest content'
+  - 'edit any basic block content'
+  - 'edit any run_contest content'
+  - 'edit any webform'
+  - 'edit own comments'
+  - 'edit own run_contest content'
   - 'edit webform assets'
+  - 'use advanced search'
