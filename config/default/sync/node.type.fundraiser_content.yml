@@ -1,0 +1,18 @@
+uuid: 401cf3bf-c458-40e0-bb20-6bd368117f4a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Fundraiser content'
+type: fundraiser_content
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

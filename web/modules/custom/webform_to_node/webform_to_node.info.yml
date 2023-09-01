@@ -1,0 +1,7 @@
+name: 'webform_to_node'
+type: module
+description: 'This module will create a node after a webform response is generated'
+package: Custom
+core_version_requirement: ^10
+dependencies:
+  - webform:webform
