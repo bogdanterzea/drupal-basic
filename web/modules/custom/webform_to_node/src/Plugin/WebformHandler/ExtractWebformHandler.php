@@ -24,6 +24,7 @@ class ExtractWebformHandler extends WebformHandlerBase {
   /**
    * {@inheritdoc}
    */
+
   public function confirmForm(array &$form, FormStateInterface $form_state, WebformSubmissionInterface $webform_submission) {
     if ($webform_submission->getElementData('fundraiser')) {
       $node = Node::create([
