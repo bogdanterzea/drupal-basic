@@ -1,0 +1,32 @@
+uuid: 7622799b-bb0e-4a2e-be75-8ff652b4f42e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.fundraiser_content.body
+    - field.field.node.fundraiser_content.field_fundraising_image
+    - node.type.fundraiser_content
+  module:
+    - text
+    - user
+id: node.fundraiser_content.teaser
+targetEntityType: node
+bundle: fundraiser_content
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_fundraising_image: true
