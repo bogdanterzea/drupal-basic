@@ -13,21 +13,34 @@ dependencies:
     - block_content
     - comment
     - contact
+    - field_ui
     - node
     - search
+    - system
+    - toolbar
     - webform
 id: organizer
 label: Organizer
 weight: -8
 is_admin: null
 permissions:
+  - 'access administration pages'
+  - 'access block library'
+  - 'access content overview'
+  - 'access toolbar'
   - 'access webform help'
   - 'access webform overview'
   - 'access webform submission user'
+  - 'administer block content'
   - 'administer block types'
+  - 'administer block_content display'
   - 'administer blocks'
   - 'administer comments'
   - 'administer contact forms'
+  - 'administer menu'
+  - 'administer modules'
+  - 'administer node display'
+  - 'administer nodes'
   - 'administer search'
   - 'administer webform'
   - 'administer webform element access'
