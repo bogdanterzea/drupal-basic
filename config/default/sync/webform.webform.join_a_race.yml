@@ -88,11 +88,8 @@ elements: |-
         ':input[name="fundraiser"]':
           checked: true
       invisible:
-        - ':input[name="fundraiser"]':
-            empty: true
-        - xor
-        - ':input[name="fundraiser"]':
-            unchecked: true
+        ':input[name="fundraiser"]':
+          unchecked: true
     '#uri_scheme': public
     '#file_preview': ':image'
     '#max_filesize': '98'
@@ -211,17 +208,17 @@ settings:
   confirmation_exclude_query: false
   confirmation_exclude_token: false
   confirmation_update: false
-  limit_total: 9999999999
-  limit_total_interval: null
+  limit_total: null
+  limit_total_interval: 60
   limit_total_message: ''
   limit_total_unique: false
-  limit_user: 1
+  limit_user: null
   limit_user_interval: 60
   limit_user_message: ''
   limit_user_unique: false
   entity_limit_total: null
   entity_limit_total_interval: null
-  entity_limit_user: null
+  entity_limit_user: 1
   entity_limit_user_interval: null
   purge: none
   purge_days: null
@@ -240,30 +237,34 @@ access:
     permissions: {  }
   view_any:
     roles:
-      - organizer
-      - content_editor
-      - administrator
+      - anonymous
+      - authenticated
     users: {  }
     permissions: {  }
   update_any:
     roles:
+      - organizer
+      - content_editor
       - administrator
     users: {  }
     permissions: {  }
   delete_any:
     roles:
       - organizer
+      - content_editor
       - administrator
     users: {  }
     permissions: {  }
   purge_any:
     roles:
       - organizer
+      - content_editor
       - administrator
     users: {  }
     permissions: {  }
   view_own:
     roles:
+      - anonymous
       - authenticated
     users: {  }
     permissions: {  }

@@ -9,6 +9,7 @@ dependencies:
   module:
     - comment
     - contact
+    - field_ui
     - file
     - filter
     - node
@@ -23,10 +24,14 @@ label: 'Authenticated user'
 weight: -9
 is_admin: false
 permissions:
+  - 'access administration pages'
   - 'access comments'
   - 'access content'
+  - 'access content overview'
   - 'access shortcuts'
   - 'access site-wide contact form'
+  - 'administer menu'
+  - 'administer node display'
   - 'delete own files'
   - 'delete own fundraiser_content content'
   - 'edit own fundraiser_content content'
