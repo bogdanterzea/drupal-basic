@@ -16,6 +16,7 @@ dependencies:
     - search
     - shortcut
     - system
+    - toolbar
     - webform
 _core:
   default_config_hash: cFrlqjtkTfvY3RGccjJkPf1SGIfJ942IrxTLWAO4mgA
@@ -30,7 +31,7 @@ permissions:
   - 'access content overview'
   - 'access shortcuts'
   - 'access site-wide contact form'
-  - 'administer menu'
+  - 'access toolbar'
   - 'administer node display'
   - 'delete own files'
   - 'delete own fundraiser_content content'

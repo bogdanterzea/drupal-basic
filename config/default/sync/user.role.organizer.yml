@@ -37,7 +37,6 @@ permissions:
   - 'administer blocks'
   - 'administer comments'
   - 'administer contact forms'
-  - 'administer menu'
   - 'administer modules'
   - 'administer node display'
   - 'administer nodes'
