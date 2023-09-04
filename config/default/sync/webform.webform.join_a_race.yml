@@ -102,9 +102,9 @@ settings:
   ajax_effect: ''
   ajax_speed: null
   page: true
-  page_submit_path: /form/join-race
-  page_confirm_path: /form/join-race
-  page_theme_name: customolivero
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
   form_title: webform
   form_submit_once: false
   form_open_message: ''
@@ -218,7 +218,7 @@ settings:
   limit_user_unique: false
   entity_limit_total: null
   entity_limit_total_interval: null
-  entity_limit_user: 1
+  entity_limit_user: null
   entity_limit_user_interval: null
   purge: none
   purge_days: null
