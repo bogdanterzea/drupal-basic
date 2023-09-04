@@ -478,8 +478,84 @@ display:
     display_plugin: page
     position: 2
     display_options:
+      sorts:
+        webform_submission_value:
+          id: webform_submission_value
+          table: webform_submission_field_join_a_race_name_surname
+          field: webform_submission_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: webform_submission_field_sort
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+      arguments: {  }
+      filters:
+        webform_id:
+          id: webform_id
+          table: webform_submission
+          field: webform_id
+          entity_type: webform_submission
+          entity_field: webform_id
+          plugin_id: bundle
+          value:
+            join_a_race: join_a_race
+        webform_submission_value:
+          id: webform_submission_value
+          table: webform_submission_field_join_a_race_name_surname
+          field: webform_submission_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: webform_submission_field_filter
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: webform_submission_value_op
+            label: Name-Surname
+            description: ''
+            use_operator: false
+            operator: webform_submission_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: webform_submission_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              organizer: '0'
+              content_editor: '0'
+              administrator: '0'
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
       defaults:
         relationships: false
+        sorts: false
+        arguments: false
+        filters: false
+        filter_groups: false
       relationships:
         uid:
           id: uid
