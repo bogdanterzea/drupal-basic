@@ -9,7 +9,6 @@ dependencies:
   module:
     - comment
     - contact
-    - field_ui
     - file
     - filter
     - node
@@ -32,7 +31,6 @@ permissions:
   - 'access shortcuts'
   - 'access site-wide contact form'
   - 'access toolbar'
-  - 'administer node display'
   - 'delete own files'
   - 'delete own fundraiser_content content'
   - 'edit own fundraiser_content content'

@@ -152,7 +152,7 @@ settings:
   submission_views: {  }
   submission_views_replace: {  }
   submission_user_columns: {  }
-  submission_user_duplicate: false
+  submission_user_duplicate: true
   submission_access_denied: default
   submission_access_denied_title: ''
   submission_access_denied_message: ''
