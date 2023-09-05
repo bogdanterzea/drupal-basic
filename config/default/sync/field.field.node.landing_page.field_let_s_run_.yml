@@ -1,0 +1,23 @@
+uuid: f02e54f4-43a9-461d-9179-836eebf307d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_let_s_run_
+    - node.type.landing_page
+  module:
+    - link
+id: node.landing_page.field_let_s_run_
+field_name: field_let_s_run_
+entity_type: node
+bundle: landing_page
+label: "Let's RUN!"
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

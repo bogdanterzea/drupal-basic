@@ -1,0 +1,29 @@
+uuid: f4b11e11-a8ae-49ce-a7e2-b9f33c1549c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_races
+    - node.type.run_contest
+    - paragraphs.paragraphs_type.races_section
+id: paragraph.races_section.field_races
+field_name: field_races
+entity_type: paragraph
+bundle: races_section
+label: Races
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      run_contest: run_contest
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

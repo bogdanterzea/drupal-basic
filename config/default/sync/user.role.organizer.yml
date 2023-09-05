@@ -1,9 +1,17 @@
 uuid: b6202f13-a2b0-47ac-a63b-61c068bdf7fe
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - webform
 id: organizer
 label: Organizer
 weight: -8
 is_admin: null
-permissions: {  }
+permissions:
+  - 'access webform help'
+  - 'access webform overview'
+  - 'access webform submission user'
+  - 'administer webform'
+  - 'administer webform element access'
+  - 'edit webform assets'

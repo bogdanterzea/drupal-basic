@@ -1,0 +1,31 @@
+uuid: cff0bd1b-a78f-4ff9-8fd1-ce58fb817045
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_races
+    - node.type.landing_page
+    - paragraphs.paragraphs_type.races_section
+  module:
+    - entity_reference_revisions
+id: node.landing_page.field_races
+field_name: field_races
+entity_type: node
+bundle: landing_page
+label: Races
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      races_section: races_section
+    negate: 0
+    target_bundles_drag_drop:
+      races_section:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions
